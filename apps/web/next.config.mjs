@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url'
 import BundleAnalyzer from '@next/bundle-analyzer'
 import { createVanillaExtractPlugin } from '@vanilla-extract/next-plugin'
 import smartRouterPkgs from '@pancakeswap/smart-router/package.json' assert { type: 'json' }
-import withWebSecurityHeaders from '@pancakeswap/next-config/dist/withWebSecurityHeaders';
+import withWebSecurityHeaders from '@pancakeswap/next-config/dist/withWebSecurityHeaders'
 import { PrismaPlugin } from '@prisma/nextjs-monorepo-workaround-plugin'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
