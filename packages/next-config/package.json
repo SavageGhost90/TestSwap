@@ -18,7 +18,7 @@
       "types": "./dist/withWebSecurityHeaders.d.ts",
       "import": "./dist/withWebSecurityHeaders.js",
       "require": "./dist/withWebSecurityHeaders.js"
-    }
+    },
     "./dist/withWebSecurityHeaders": "./dist/withWebSecurityHeaders.js"
   }
 }
