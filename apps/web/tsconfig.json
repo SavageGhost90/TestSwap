@@ -18,7 +18,8 @@
     "paths": {
       "*": ["./src/*"],
       "@pancakeswap/uikit": ["../../packages/uikit/src/index.ts"],
-      "@pancakeswap/uikit/*": ["../../packages/uikit/src/*"]
+      "@pancakeswap/uikit/*": ["../../packages/uikit/src/*"],
+      "@pancakeswap/next-config": ["../../packages/next-config"]
     }
   },
   "exclude": [
