@@ -56,6 +56,7 @@
     "stylelint-config-styled-components": "^0.1.1",
     "tilg": "^0.1.1",
     "tsx": "^4.19.0",
+    "next": "14.2.3",
     "turbo": "1.10.2",
     "typescript": "5.2.2",
     "vitest": "^0.27.3",
