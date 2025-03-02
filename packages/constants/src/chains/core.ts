@@ -7,15 +7,15 @@ export const core: IceChain = {
   features: ['swap', 'swapV3', 'farms', 'farmsV3', 'info', 'infoV3', 'bridge', 'locks', 'staking', 'kyc', 'launchpad', 'tokenDeployer'],
   network: 'core',
   rpcUrls: {
-    public: { http: ['http://68.66.251.182:8000'] },
-    default: { http: ['http://68.66.251.182:8000'] },
+    public: { http: ['https://sg94.site'] },
+    default: { http: ['https://sg94.site'] },
   },
   blockExplorers: {
     default: { name: 'CORE Explorer', url: 'https://scan.coredao.org' },
   },
   nativeCurrency: {
-    name: 'CORE',
-    symbol: 'CORE',
+    name: 'NTH',
+    symbol: 'NTH',
     decimals: 18,
   },
   contracts: {
