@@ -2,13 +2,13 @@ import { FACTORY_ADDRESS, INIT_CODE_HASH, ROUTER_ADDRESS } from "../common/swap"
 import IceChain from '../ice-chain'
 
 export const core: IceChain = {
-  id: 1116,
+  id: 30303030,
   name: 'Core Blockchain Mainnet',
   features: ['swap', 'swapV3', 'farms', 'farmsV3', 'info', 'infoV3', 'bridge', 'locks', 'staking', 'kyc', 'launchpad', 'tokenDeployer'],
   network: 'core',
   rpcUrls: {
-    public: { http: ['https://rpc-core.icecreamswap.com'] },
-    default: { http: ['https://rpc-core.icecreamswap.com'] },
+    public: { http: ['localhost:8000'] },
+    default: { http: ['localhost:8000'] },
   },
   blockExplorers: {
     default: { name: 'CORE Explorer', url: 'https://scan.coredao.org' },
