@@ -2,16 +2,20 @@ import type { NextConfig } from 'next'
 
 type Headers = Awaited<ReturnType<NonNullable<NextConfig['headers']>>>
 
-// function createCSP() {
-//   const IFRAME_WHITE_LIST = ['https://*.safe.global']
-//
-//   const rules = [`frame-ancestors 'self' ${IFRAME_WHITE_LIST.join(' ')}`, 'report-uri /api/_report/csp']
-//
-//   return {
-//     key: 'Content-Security-Policy',
-//     value: rules.join('; '),
-//   }
-// }
+// Funzione per creare la Content-Security-Policy
+function createCSP() {
+  const IFRAME_WHITE_LIST = ['https://*.safe.global', 'https://test-swap-git-nexusswapv3-savageghost90s-projects.vercel.app', 'https://admin.sg94.site']
+
+  const rules = [
+    `frame-ancestors 'self' ${IFRAME_WHITE_LIST.join(' ')}`,
+    'report-uri /api/_report/csp', // Puoi aggiungere un endpoint di report per monitorare eventuali violazioni CSP
+  ]
+
+  return {
+    key: 'Content-Security-Policy',
+    value: rules.join('; '),
+  }
+}
 
 export function withWebSecurityHeaders(config: NextConfig): NextConfig {
   const originalHeaders = config.headers || []
@@ -33,7 +37,7 @@ export function withWebSecurityHeaders(config: NextConfig): NextConfig {
             key: 'Referrer-Policy',
             value: 'strict-origin-when-cross-origin',
           },
-          // createCSP(),
+          createCSP(), // Aggiungi la tua CSP qui
         ],
       },
     ]
