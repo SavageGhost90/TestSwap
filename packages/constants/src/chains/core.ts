@@ -7,8 +7,8 @@ export const core: IceChain = {
   features: ['swap', 'swapV3', 'farms', 'farmsV3', 'info', 'infoV3', 'bridge', 'locks', 'staking', 'kyc', 'launchpad', 'tokenDeployer'],
   network: 'core',
   rpcUrls: {
-    public: { http: ['localhost:8000'] },
-    default: { http: ['localhost:8000'] },
+    public: { http: ['https://admin.sg94.site'] },
+    default: { http: ['https://admin.sg94.site'] },
   },
   blockExplorers: {
     default: { name: 'CORE Explorer', url: 'https://scan.coredao.org' },
